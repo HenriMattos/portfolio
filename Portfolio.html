@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gustavo Mattos - Android Developer</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-black text-white transition-colors duration-300" id="body">
+  <nav class="fixed w-full backdrop-blur-md z-50 py-4 transition-colors duration-300" id="nav">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+      <a href="#" class="text-2xl font-semibold">GM</a>
+      <div class="flex items-center space-x-8">
+        <div class="hidden md:flex space-x-8">
+          <a href="#about" class="hover:text-gray-300">Sobre</a>
+          <a href="#skills" class="hover:text-gray-300">Habilidades</a>
+          <a href="#projects" class="hover:text-gray-300">Projetos</a>
+          <a href="#certifications" class="hover:text-gray-300">Certificações</a>
+          <a href="#contact" class="hover:text-gray-300">Contato</a>
+        </div>
+        <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-700">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button id="menu-btn" class="md:hidden">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div id="mobile-menu" class="fixed inset-0 backdrop-blur-lg hidden transition-colors duration-300">
+    <div class="px-4 py-6 space-y-4">
+      <a href="#about" class="block hover:text-gray-300">Sobre</a>
+      <a href="#skills" class="block hover:text-gray-300">Habilidades</a>
+      <a href="#projects" class="block hover:text-gray-300">Projetos</a>
+      <a href="#certifications" class="block hover:text-gray-300">Certificações</a>
+      <a href="#contact" class="block hover:text-gray-300">Contato</a>
+    </div>
+  </div>
+
+  <section class="h-screen flex items-center justify-center bg-gradient-to-b from-gray-900 to-black dark:from-gray-100 dark:to-white text-center px-4 transition-colors duration-300" id="hero">
+    <div>
+      <h1 class="text-6xl md:text-8xl font-bold mb-4">Gustavo Mattos</h1>
+      <p class="text-xl md:text-2xl text-gray-400">Android Developer | Cyber Security</p>
+      <div class="mt-8">
+        <i class="fas fa-chevron-down animate-bounce text-3xl"></i>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="py-32 px-4 transition-colors duration-300">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-4xl md:text-5xl font-bold mb-8">Sobre Mim</h2>
+      <p class="text-xl text-gray-400 leading-relaxed">
+        Sou um Estudante de Tecnologia, e atualmente estou me especializando em desenvolvimento mobile com Kotlin, mas já tenho experiência com C/C++ e Python. Com uma boa base nos fundamentos de cibersegurança, estou comprometido em criar aplicações móveis que aliam segurança e confiabilidade. 
+        Quero desenvolver apps Android que entreguem uma boa experiência para o usuário, ao mesmo tempo em que protejam rigorosamente a privacidade e segurança de seus dados com uma maior facilidade.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills" class="py-32 px-4 bg-gray-900 dark:bg-gray-100 transition-colors duration-300">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl md:text-5xl font-bold mb-16">Habilidades</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="p-6 bg-black dark:bg-white rounded-lg transition-colors duration-300">
+          <i class="fab fa-android text-green-500 text-4xl mb-4"></i>
+          <h3 class="text-2xl font-bold mb-4">Android Development</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li>Kotlin</li>
+            <li>Android SDK</li>
+            <li>Clean Architecture</li>
+            <li>MVVM Pattern</li>
+          </ul>
+        </div>
+        
+        <div class="p-6 bg-black dark:bg-white rounded-lg transition-colors duration-300">
+          <i class="fas fa-shield-alt text-blue-500 text-4xl mb-4"></i>
+          <h3 class="text-2xl font-bold mb-4">Cyber Security</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li>Segurança Mobile</li>
+            <li>Criptografia</li>
+            <li>Proteção de Dados</li>
+            <li>Análise de Vulnerabilidades</li>
+          </ul>
+        </div>
+        
+        <div class="p-6 bg-black dark:bg-white rounded-lg transition-colors duration-300">
+          <i class="fas fa-code text-purple-500 text-4xl mb-4"></i>
+          <h3 class="text-2xl font-bold mb-4">Programação</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li>C/C++</li>
+            <li>Python</li>
+            <li>Git</li>
+            <li>SQLite</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="py-32 px-4 transition-colors duration-300">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl md:text-5xl font-bold mb-16">Projetos</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+  
+        <!-- Projeto 1: SafePass -->
+        <div class="bg-gray-900 dark:bg-gray-100 rounded-lg p-8 hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors duration-300">
+          <h3 class="text-2xl font-bold mb-4">SafePass</h3>
+          <p class="text-gray-400 mb-4">
+            Gerenciador de senhas seguro, que usa criptografia AES para armazenar credenciais, autenticação biométrica e integração com o Google Drive para backups.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 bg-green-500/20 text-green-400 rounded-full text-sm">Kotlin</span>
+            <span class="px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-sm">Android SDK</span>
+            <span class="px-3 py-1 bg-purple-500/20 text-purple-400 rounded-full text-sm">Room DB</span>
+            <span class="px-3 py-1 bg-yellow-500/20 text-yellow-400 rounded-full text-sm">Encryption</span>
+            <span class="px-3 py-1 bg-red-500/20 text-red-400 rounded-full text-sm">Biometrics</span>
+          </div>
+          <a href="https://github.com/henrimattos/safepass" target="_blank" class="text-gray-400 hover:text-white">
+            <i class="fab fa-github text-2xl"></i>
+          </a>
+        </div>
+  
+        <!-- Projeto 2: CityExplorer -->
+        <div class="bg-gray-900 dark:bg-gray-100 rounded-lg p-8 hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors duration-300">
+          <h3 class="text-2xl font-bold mb-4">CityExplorer</h3>
+          <p class="text-gray-400 mb-4">
+            Um aplicativo de exploração de cidades que exibe pontos turísticos e eventos, com integração ao Mapbox e Firebase para busca e favoritos personalizados.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 bg-green-500/20 text-green-400 rounded-full text-sm">Kotlin</span>
+            <span class="px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-sm">Jetpack Compose</span>
+            <span class="px-3 py-1 bg-yellow-500/20 text-yellow-400 rounded-full text-sm">Firebase</span>
+            <span class="px-3 py-1 bg-indigo-500/20 text-indigo-400 rounded-full text-sm">API Integration</span>
+          </div>
+          <a href="https://github.com/henrimattos/cityexplorer" target="_blank" class="text-gray-400 hover:text-white">
+            <i class="fab fa-github text-2xl"></i>
+          </a>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications" class="py-32 px-4 bg-gray-900 dark:bg-gray-100 transition-colors duration-300">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-4xl md:text-5xl font-bold mb-16">Certificações</h2>
+      <div class="space-y-8">
+        <div class="border-l-4 border-green-500 pl-6">
+          <h3 class="text-2xl font-bold mb-2">Android Development with Kotlin</h3>
+          <p class="text-gray-400">Desenvolvimento Android moderno com Kotlin</p>
+        </div>
+        
+        <div class="border-l-4 border-blue-500 pl-6">
+          <h3 class="text-2xl font-bold mb-2">Google Cybersecurity Certificate</h3>
+          <p class="text-gray-400">Fundamentos de segurança e práticas de proteção de dados</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-32 px-4 transition-colors duration-300">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl md:text-5xl font-bold mb-8">Contato</h2>
+      <p class="text-xl text-gray-400 mb-8">
+        Vamos criar algo incrível juntos?
+      </p>
+      <a 
+        href="mailto:henrikdepaivamattos@proton.me" 
+        class="inline-block bg-white dark:bg-black text-black dark:text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors duration-300"
+      >
+        Entre em Contato
+      </a>
+      <div class="mt-16 flex justify-center space-x-8">
+        <a href="tel:+5592993969713" class="text-gray-400 hover:text-white dark:hover:text-black">
+          <i class="fas fa-phone text-2xl"></i>
+        </a>
+        <a href="https://github.com/henrimattos" target="_blank" class="text-gray-400 hover:text-white dark:hover:text-black">
+          <i class="fab fa-github text-2xl"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+  
+</body>
+</html>
